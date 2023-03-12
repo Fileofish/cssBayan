@@ -1,9 +1,39 @@
 @font-face {
     font-family: 'Open Sans';
-    src: url(fons/Open_Sans/static/OpenSans/OpenSans-Bold.ttf);
+    src: url(fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf);
     font-weight: 700;
 }
 * {
     margin: 0;
     padding: 0;
+}
+body {
+    background-color: azure;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a3a3a;
+}
+.wrapper {
+    margin: 35px auto;
+    width: 700px;
+}
+.memes--block {
+    margin: 20px 0;
+    padding: 5px 0;
+    border-top: 3px solid #afcccc;
+}
+.image--mem {
+    display: block;
+    margin: 5px auto;
+    width: 500px;
+    height: auto;
+}
+.memes--icon {
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url(img/open-icon.png);
+    background-size: 100%;
+    width: 21px;
+    height: 21px;
 }

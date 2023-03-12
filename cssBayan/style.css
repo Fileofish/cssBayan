@@ -7,33 +7,84 @@
     margin: 0;
     padding: 0;
 }
-body {
-    background-color: azure;
+.body {
+    background-color: #dde2e2;
     font-family: 'Open Sans';
-    font-size: 16px;
     font-weight: 700;
-    color: #1a3a3a;
+}
+h1 {
+    color: #2f6d6d;
 }
 .wrapper {
-    margin: 35px auto;
-    width: 700px;
-}
-.memes--block {
-    margin: 20px 0;
-    padding: 5px 0;
-    border-top: 3px solid #afcccc;
+    width: 50%;
+    margin: 30px auto;
 }
 .image--mem {
     display: block;
-    margin: 5px auto;
+    margin: auto;
     width: 500px;
     height: auto;
 }
-.memes--icon {
-    display: inline-block;
-    margin-right: 10px;
-    background-image: url(img/open-icon.png);
-    background-size: 100%;
-    width: 21px;
-    height: 21px;
+.bayan-container {
+    margin: 20px 0;
 }
+.bayan-container .acor-body {
+    width: 100%;
+    margin: auto;
+    height: 0;
+    padding: 0 30px;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+}
+.bayan-container label {
+    cursor: pointer;
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    color: #43c4c4;
+    margin: 0 0 5px;
+    transition: color .35s;
+    border-top: 4px solid #bbcccc;
+}
+.acor-body {
+    cursor: pointer;
+}
+.acor-body:hover {
+    height: auto;
+    margin-top: -5px;
+    padding: 20px 30px 10px;
+}
+.bayan-container:hover + .bayan-container label{
+    color: #1e5757;
+}
+.bayan-container label:hover + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    padding: 20px 30px 10px;
+}
+.bayan-container input{
+    display: none;
+}
+.bayan-container input:checked + label {
+    color: #3f9e9e;
+}
+.bayan-container input:checked + label + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    padding: 20px 30px 10px;
+}
+.bayan-container label:before {
+    content: " ";
+    width: 25px;
+    height: 25px;
+    background-image: url(img/open-icon-hover.png);
+    background-size: 100%;
+    float: right;
+}
+.bayan-container input:checked + label:before {
+    transition: all .35s;
+    background-image: url(img/close-icon.png);
+}
+

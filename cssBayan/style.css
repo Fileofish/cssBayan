@@ -22,7 +22,7 @@ h1 {
 .image--mem {
     display: block;
     margin: auto;
-    width: 500px;
+    width: 70%;
     height: auto;
 }
 .bayan-container {
@@ -87,4 +87,27 @@ h1 {
     transition: all .35s;
     background-image: url(img/close-icon.png);
 }
-
+@media (max-width: 970px) {
+    .wrapper {
+        width: 70%;
+    }
+    .bayan-container label {
+        font-size: 18px;
+    }
+    .bayan-container label:before {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (max-width: 530px) {
+    .wrapper {
+        width: 80%;
+    }
+    .bayan-container label {
+        font-size: 16px;
+    }
+    .bayan-container label:before {
+        width: 16px;
+        height: 16px;
+    }
+}
